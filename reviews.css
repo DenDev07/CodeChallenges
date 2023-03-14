@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 30, 39);
+    overflow: hidden;
+}
+ /* #section1 */
+#section1{
+    position: relative;
+    width: 28%;
+    height: 85%;
+    padding: 0 2%;
+    font-family: "Roboto" sans-serif;
+    background: rgb(54, 35, 54);
+    box-shadow: 1px 1px 15px rgb(54, 30, 54);
+    transform: translateY(-5%);
+}
+/* heading */
+#section1 .heading{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 8% 0;
+}
+/* form input and search */
+#section1 form{
+    position: relative;
+    width:100%;
+    height: 10%;
+}
+#section1 form :is(input, i){
+    position: absolute;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+}
+#section1 form input{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    padding: 0 0 0 10%;
+    /* background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.29);
+    From https://css.glass */background: rgba(255, 255, 255, 0.06);
+    border-radius: 3.8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#section1 form input::placeholder{
+    font-size: 1.2em;
+    color: silver;
+}
+#section1 form i{
+    font-size: 1.2em;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 3%;
+    color: silver;
+    cursor: pointer;
+}
+/* filter buttons */
+#section1 .buttons{
+    width: 100%;
+    height: 18%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#section1 .buttons button{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(39, 20, 34);
+    color: silver;
+    border: none;
+    box-shadow: 0px 0px 2px #333;
+    width: auto;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+#section1 .buttons button:hover{
+    background-color: rgb(117, 40, 117);
+    color: aliceblue;
+    transition-delay: 0.2s linear;
+}
+#section1 .buttons button:focus {
+    background-color: rgb(117, 40, 117);
+    color: aliceblue;
+}
+/* cards */
+#section1 .cardholder{
+    margin-top: 7%;
+    width: 100%;
+    height: 60%;
+}
+#section1 .cardholder .card{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 2%;
+    background: rgba(61, 54, 61, 0.6);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+}
+/* inner card */
+/* info */
+#section1 .cardholder .card .info{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    padding: 5% 5%;
+}
+
+#section1 .cardholder .card1 .info .avatar{
+    background: gray;
+}
+#section1 .cardholder .card2 .info .avatar{
+    background: rgb(11, 51, 11);
+}
+#section1 .cardholder .card .info .avatar{
+    width: 12%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+#section1 .cardholder .card .info .name{
+    margin-left: 2%;
+    color: aliceblue;
+}
+#section1 .cardholder .card .info .rating{
+    position: width 30%;
+    margin-left: 12%;
+    height: 60%;
+ /*    left: 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* text */
+#section1 .cardholder .card .text{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10%;
+    color: silver;
+}
+/* sub */
+#section1 .cardholder .card .sub{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+#section1 .cardholder .card .sub :is(.date, .share){
+    color: gray;
+    font-size: 0.8em;
+}
+#section1 .cardholder .card .sub .date{
+    transform: translate(10%, 40%);
+}
+#section1 .cardholder .card .sub .share{
+    position: relative;
+    width: 20%;
+    height: 50%;
+}
+#section1 .cardholder .card .sub .share button{
+    padding: 4px 7px;
+    margin-left: 100%;
+    transform: translateX(-80%);
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: transparent;
+    border: 1px solid rgb(85, 73, 73);
+    color: silver;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#section1 .cardholder .card .sub .share button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+
